@@ -24,4 +24,7 @@
     <!-- If using proximity_sensor_type, specifies a threshold value to distinguish near and
          far break points. A sensor value less than this is considered "near". -->
     <item name="proximity_sensor_threshold" translatable="false" format="float" type="dimen">5</item>
+
+    <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
+    <integer name="config_keyguardMaxRefreshRate">30</integer>
 </resources>
