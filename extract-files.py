@@ -26,7 +26,7 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .regex_replace('on charger', 'on property:init.svc.vendor.charger=running'),
     'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
-        .regex_replace('.+media_codecs_(google_audio|google_telephony|vendor_audio).+\n', ''),
+        .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
         .regex_replace('.+dolby.+\n', ''),
     (
