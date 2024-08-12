@@ -320,10 +320,7 @@ $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
 # Media
 PRODUCT_PACKAGES += \
-    libOmxCore \
-    libcodec2_hidl@1.0.vendor \
-    libstagefrighthw \
-    libstagefright_softomx_plugin.vendor
+    libcodec2_hidl@1.0.vendor
 
 PRODUCT_PACKAGES += \
     libavservices_minijail \
