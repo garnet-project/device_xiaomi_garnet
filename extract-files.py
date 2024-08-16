@@ -42,6 +42,8 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib64/libqtikeymint.so'
     ): blob_fixup()
         .add_needed("android.hardware.security.rkp-V3-ndk.so"),
+    'vendor/bin/qcc-trd': blob_fixup()
+        .replace_needed('libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'),
     'vendor/etc/camera/pureShot_parameter.xml': blob_fixup()
         .regex_replace(r'=(\d+)>', r'="\1">'),
     (
