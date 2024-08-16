@@ -36,6 +36,11 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
+    'vendor/bin/qcc-trd': blob_fixup()
+        .replace_needed(
+            'libgrpc++_unsecure.so',
+            'libgrpc++_unsecure_prebuilt.so'
+        ),
     'vendor/etc/camera/pureShot_parameter.xml': blob_fixup()
         .regex_replace(r'=(\d+)>', r'="\1">'),
     (
