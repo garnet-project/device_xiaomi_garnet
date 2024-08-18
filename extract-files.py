@@ -69,7 +69,7 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib/libqtikeymint.so',
        'vendor/lib64/libqtikeymint.so'
     ): blob_fixup()
-        .add_needed("android.hardware.security.rkp-V3-ndk.so"),
+        .add_needed('android.hardware.security.rkp-V1-ndk.so'),
     (
        'system_ext/lib/libwfdmmsrc_system.so',
        'system_ext/lib64/libwfdmmsrc_system.so'
