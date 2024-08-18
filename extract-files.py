@@ -118,7 +118,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libqtikeymint.so',
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
     ): blob_fixup()
-        .add_needed('android.hardware.security.rkp-V3-ndk.so'),
+        .add_needed('android.hardware.security.rkp-V1-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
