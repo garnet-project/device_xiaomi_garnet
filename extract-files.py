@@ -69,6 +69,18 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib/libqtikeymint.so',
        'vendor/lib64/libqtikeymint.so'
     ): blob_fixup()
+        .replace_needed(
+            'android.hardware.security.keymint-V1-ndk_platform.so',
+            'android.hardware.security.keymint-V1-ndk.so',
+        )
+        .replace_needed(
+            'android.hardware.security.secureclock-V1-ndk_platform.so',
+            'android.hardware.security.secureclock-V1-ndk.so',
+        )
+        .replace_needed(
+            'android.hardware.security.sharedsecret-V1-ndk_platform.so',
+            'android.hardware.security.sharedsecret-V1-ndk.so',
+        )
         .add_needed('android.hardware.security.rkp-V1-ndk.so'),
     (
        'system_ext/lib/libwfdmmsrc_system.so',
