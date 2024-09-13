@@ -100,6 +100,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libmialgoengine.so'
     ): blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
+    'vendor/lib64/libQnnDspV65CalculatorStub.so': blob_fixup()
+        .add_needed('liblog.so'),
     (
         'vendor/lib64/libalhLDC.so',
         'vendor/lib64/libalLDC.so',
