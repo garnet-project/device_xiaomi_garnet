@@ -67,6 +67,7 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libwfdnative.so': blob_fixup()
+        .add_needed('libinput_shim.so')
         .remove_needed('android.hidl.base@1.0.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
         .replace_needed(
@@ -79,6 +80,8 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib64/libqtikeymint.so'
     ): blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
+    'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
+        .add_needed("libgui_shim.so"),
     'vendor/bin/qcc-trd': blob_fixup()
         .replace_needed('libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'),
     'vendor/etc/camera/pureShot_parameter.xml': blob_fixup()
