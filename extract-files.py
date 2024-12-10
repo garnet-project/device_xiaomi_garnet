@@ -97,6 +97,18 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libmialgoengine.so'
     ): blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
+    (
+        'vendor/lib64/libalhLDC.so',
+        'vendor/lib64/libalLDC.so',
+        'vendor/lib64/libTrueSight.so',
+        'vendor/lib64/libMiVideoFilter.so'
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed(
             'vendor.qti.hardware.display.config-V2-ndk_platform.so',
