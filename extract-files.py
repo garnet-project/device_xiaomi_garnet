@@ -151,6 +151,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'vendor/lib64/libQnnDspV65CalculatorStub.so': blob_fixup()
         .add_needed('liblog.so'),
+    'vendor/lib64/hw/camera.qcom.so' : blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
