@@ -2630,8 +2630,6 @@ vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/sns_reg_config
 
 # Sensors ultrasound
-vendor/lib/libultrasound_notify.so
-vendor/lib/sensors.ultrasoundproximity.so
 vendor/lib64/libultrasound_notify.so
 vendor/lib64/sensors.ultrasoundproximity.so
 
