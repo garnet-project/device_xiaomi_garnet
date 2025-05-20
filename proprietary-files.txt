@@ -82,6 +82,8 @@ vendor/firmware/fs19xx.fsm
 vendor/lib64/libagm.so
 vendor/lib64/libmisight.so
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib64/libagmmixer.so
+vendor/lib64/libagmclient.so
 
 # Audio libraries
 vendor/etc/audio_cloud_control_white_list.xml
