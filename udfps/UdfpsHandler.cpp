@@ -61,25 +61,23 @@ static bool readBool(int fd) {
 }
 
 static disp_event_resp* parseDispEvent(int fd) {
-    char event_data[1024] = {0};
-    ssize_t size;
-
-    memset(event_data, 0x0, sizeof(event_data));
-    size = read(fd, event_data, sizeof(event_data));
+    char* event_data = new char[1024]();
+    ssize_t size = read(fd, event_data, 1024);
     if (size < 0) {
         LOG(ERROR) << "read fod event failed";
+        delete[] event_data;
         return nullptr;
     }
 
     if (size < sizeof(struct disp_event)) {
         LOG(ERROR) << "Invalid event size " << size << ", expect at least "
                    << sizeof(struct disp_event);
+        delete[] event_data;
         return nullptr;
     }
 
-    return (struct disp_event_resp*)&event_data[0];
+    return reinterpret_cast<struct disp_event_resp*>(event_data);
 }
-
 }  // anonymous namespace
 
 class XiaomiGarnetUdfpsHander : public UdfpsHandler {
