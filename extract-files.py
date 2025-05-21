@@ -9,6 +9,7 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
+    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -25,6 +26,16 @@ namespace_imports = [
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
 ]
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'libagmclient',
+        'libagmmixer',
+        'libpalclient',
+        'vendor.qti.hardware.pal@1.0-impl',
+    ): lib_fixup_remove,
+}
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
