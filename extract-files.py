@@ -89,7 +89,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed("libgui_shim.so"),
     'vendor/bin/qcc-trd': blob_fixup()
         .replace_needed('libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'),
-    'vendor/etc/camera/pureShot_parameter.xml': blob_fixup()
+    (
+        'vendor/etc/camera/pureShot_parameter.xml',
+        'vendor/etc/camera/pureView_parameter.xml'
+    ): blob_fixup()
         .regex_replace(r'=(\d+)>', r'="\1">'),
     (
        'vendor/etc/media_codecs_cape.xml',
@@ -110,8 +113,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed(
-        'vendor.qti.hardware.display.config-V2-ndk_platform.so',
-        'vendor.qti.hardware.display.config-V2-ndk.so',
+            'vendor.qti.hardware.display.config-V2-ndk_platform.so',
+            'vendor.qti.hardware.display.config-V2-ndk.so',
     ),
     (
         'vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so',
@@ -119,8 +122,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libgarden_haltests_e2e.so'
     ): blob_fixup()
         .replace_needed(
-        'android.hardware.gnss-V1-ndk_platform.so',
-        'android.hardware.gnss-V1-ndk.so'
+            'android.hardware.gnss-V1-ndk_platform.so',
+            'android.hardware.gnss-V1-ndk.so'
     ),
     (
         'vendor/lib64/libalhLDC.so',
