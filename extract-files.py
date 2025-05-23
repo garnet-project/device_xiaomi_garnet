@@ -78,7 +78,10 @@ blob_fixups: blob_fixups_user_type = {
             'libgrpc++_unsecure.so',
             'libgrpc++_unsecure_prebuilt.so'
         ),
-    'vendor/etc/camera/pureShot_parameter.xml': blob_fixup()
+    (
+        'vendor/etc/camera/pureView_parameter.xml',
+        'vendor/etc/camera/pureShot_parameter.xml'
+    ): blob_fixup()
         .regex_replace(r'=(\d+)>', r'="\1">'),
     (
         'vendor/etc/init/hw/init.batterysecret.rc',
