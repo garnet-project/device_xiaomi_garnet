@@ -117,6 +117,7 @@ blob_fixups: blob_fixups_user_type = {
             'vendor.qti.hardware.display.config-V2-ndk.so',
     ),
     (
+        'vendor/bin/hw/android.hardware.gnss-aidl-service-qti',
         'vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so',
         'vendor/lib64/libgarden.so',
         'vendor/lib64/libgarden_haltests_e2e.so'
