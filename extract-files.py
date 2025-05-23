@@ -138,10 +138,7 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
-    (
-        'vendor/lib/vendor.libdpmframework.so',
-        'vendor/lib64/vendor.libdpmframework.so'
-    ): blob_fixup()
+    'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
     (
         'vendor/lib/nfc_nci.nqx.default.hw.v1.so',
