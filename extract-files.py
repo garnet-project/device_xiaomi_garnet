@@ -138,9 +138,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib/vendor.libdpmframework.so',
         'vendor/lib64/vendor.libdpmframework.so'
     ): blob_fixup()
-        .add_needed(
-        'libhidlbase_shim.so',
-    ),
+        .add_needed('libhidlbase_shim.so'),
     (
         'vendor/lib/nfc_nci.nqx.default.hw.v1.so',
         'vendor/lib64/nfc_nci.nqx.default.hw.v1.so'
