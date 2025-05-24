@@ -1833,8 +1833,6 @@ vendor/lib64/vendor.qti.qspmhal@1.0.so
 vendor/bin/init.qti.write.sh
 vendor/bin/qtigetprop
 vendor/bin/qtisetprop
-vendor/lib/libsoc_helper.so
-vendor/lib/libsoc_helper_jni.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libsoc_helper_jni.so
 
