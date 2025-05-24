@@ -1731,8 +1731,6 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 # Poweropt
 vendor/bin/poweropt-service
 vendor/etc/init/poweropt-service.rc
-vendor/lib/libpowercallback.so
-vendor/lib/libpowercore.so
 vendor/lib64/libpowercallback.so
 vendor/lib64/libpowercore.so
 
