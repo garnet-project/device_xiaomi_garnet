@@ -2096,7 +2096,6 @@ vendor/bin/subsystem_ramdump
 # Secure element
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
 vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
-vendor/lib/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/jcos_nq_client-v1.so
 vendor/lib64/ls_nq_client-v1.so
