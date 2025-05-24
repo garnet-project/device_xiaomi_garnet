@@ -1504,7 +1504,6 @@ vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/lowirpcd
 vendor/bin/mlid
-vendor/bin/qcc-trd
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
