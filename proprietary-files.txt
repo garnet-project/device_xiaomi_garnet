@@ -1598,34 +1598,6 @@ vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
 vendor/etc/public.libraries.txt
 
 # Neural networks
-vendor/lib/libQnnChrometraceProfilingReader.so
-vendor/lib/libQnnCpu.so
-vendor/lib/libQnnDsp.so
-vendor/lib/libQnnDspNetRunExtensions.so
-vendor/lib/libQnnDspV65CalculatorStub.so
-vendor/lib/libQnnDspV65Stub.so
-vendor/lib/libQnnDspV65StubInternal.so
-vendor/lib/libQnnDspV66CalculatorStub.so
-vendor/lib/libQnnDspV66Stub.so
-vendor/lib/libQnnDspV66StubInternal.so
-vendor/lib/libQnnGpu.so
-vendor/lib/libQnnGpuNetRunExtensions.so
-vendor/lib/libQnnGpuProfilingReader.so
-vendor/lib/libQnnHta.so
-vendor/lib/libQnnHtaNetRunExtensions.so
-vendor/lib/libQnnHtp.so
-vendor/lib/libQnnHtpNetRunExtensions.so
-vendor/lib/libQnnHtpPrepare.so
-vendor/lib/libQnnHtpProfilingReader.so
-vendor/lib/libQnnHtpV68CalculatorStub.so
-vendor/lib/libQnnHtpV68Stub.so
-vendor/lib/libQnnHtpV69CalculatorStub.so
-vendor/lib/libQnnHtpV69Stub.so
-vendor/lib/libQnnHtpV73CalculatorStub.so
-vendor/lib/libQnnHtpV73Stub.so
-vendor/lib/libQnnSaver.so
-vendor/lib/libQnnSystem.so
-vendor/lib/libhta_hexagon_runtime_qnn.so
 vendor/lib64/libQnnChrometraceProfilingReader.so
 vendor/lib64/libQnnCpu.so
 vendor/lib64/libQnnDsp.so
