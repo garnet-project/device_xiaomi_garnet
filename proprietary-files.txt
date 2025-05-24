@@ -1044,18 +1044,6 @@ vendor/lib64/camera/com.qti.tuned.garnet_sunny_s5khp3_wide_i.bin
 vendor/lib64/hw/com.qti.chi.override.so
 
 # Computer vision
-vendor/lib/libcv_common.so
-vendor/lib/libcvp2_1.so
-vendor/lib/libeva.so
-vendor/lib/libfastcrc.so
-vendor/lib/libfastcvdsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libscveCommon.so
-vendor/lib/libscveCommon_stub.so
-vendor/lib/libscveObjectSegmentation.so
-vendor/lib/libscveObjectTracker.so
-vendor/lib/libscveObjectTracker_stub.so
-vendor/lib/libvideoutils.so
 vendor/lib64/libcv_common.so
 vendor/lib64/libcvp2_1.so
 vendor/lib64/libeva.so
