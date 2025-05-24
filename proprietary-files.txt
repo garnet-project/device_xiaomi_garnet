@@ -1589,10 +1589,6 @@ vendor/etc/sn100u_pnx_ese_sn.pnscr
 vendor/etc/sn100u_pnx_ndi.pnscr
 vendor/etc/sn100u_pnx_pcv.pnscr
 vendor/etc/sn100u_pnx_sst.pnscr
-vendor/lib/libsn100u_fw.so
-vendor/lib/libsn220u_fw.so
-vendor/lib/nfc_nci.nqx.default.hw.v1.so
-vendor/lib/vendor.nxp.hardware.nfc@2.0.so
 vendor/lib64/libsn100u_fw.so
 vendor/lib64/libsn220u_fw.so
 vendor/lib64/nfc_nci.nqx.default.hw.v1.so
