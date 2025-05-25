@@ -826,9 +826,9 @@ vendor/lib64/libMiMotion.so
 vendor/lib64/libMiVideoFilter.so
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libSNPE.so
-vendor/lib64/libSnpeDspV65Stub.so
-vendor/lib64/libSnpeDspV66Stub.so
-vendor/lib64/libSnpeHta.so
+vendor/lib64/libSnpeDspV65Stub.so;FIX_SONAME
+vendor/lib64/libSnpeDspV66Stub.so;FIX_SONAME
+vendor/lib64/libSnpeHta.so;FIX_SONAME
 vendor/lib64/libSnpeHtpPrepare.so
 vendor/lib64/libSnpeHtpV68Stub.so
 vendor/lib64/libSnpeHtpV69Stub.so
@@ -838,9 +838,9 @@ vendor/lib64/libXMFaceFocus.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libalLDC.so
-vendor/lib64/libalLDC_p.so
+vendor/lib64/libalLDC_p.so;FIX_SONAME
 vendor/lib64/libalhLDC.so
-vendor/lib64/libalhLDC_p.so
+vendor/lib64/libalhLDC_p.so;FIX_SONAME
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libancbase.so
 vendor/lib64/libarcsoft_beautyshot.so
@@ -1265,8 +1265,8 @@ my_bigball/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/pe
 my_bigball/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|4fb8d8ab0e1dbda1582361f48395f819367edb0a
 
 # Fingerprint
-odm/lib64/hw/fingerprint.fpc_fod.so:odm/lib64/hw/fingerprint.fpc_fod.default.so
-odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so
+odm/lib64/hw/fingerprint.fpc_fod.so:odm/lib64/hw/fingerprint.fpc_fod.default.so;FIX_SONAME
+odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 odm/lib64/libgf_hal.so
 
 # GNSS
@@ -1618,10 +1618,10 @@ vendor/lib64/libQnnDsp.so
 vendor/lib64/libQnnDspNetRunExtensions.so
 vendor/lib64/libQnnDspV65CalculatorStub.so
 vendor/lib64/libQnnDspV65Stub.so
-vendor/lib64/libQnnDspV65StubInternal.so
+vendor/lib64/libQnnDspV65StubInternal.so;FIX_SONAME
 vendor/lib64/libQnnDspV66CalculatorStub.so
 vendor/lib64/libQnnDspV66Stub.so
-vendor/lib64/libQnnDspV66StubInternal.so
+vendor/lib64/libQnnDspV66StubInternal.so;FIX_SONAME
 vendor/lib64/libQnnGpu.so
 vendor/lib64/libQnnGpuNetRunExtensions.so
 vendor/lib64/libQnnGpuProfilingReader.so
