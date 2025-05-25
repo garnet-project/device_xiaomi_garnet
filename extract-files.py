@@ -9,6 +9,7 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
+    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -18,6 +19,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/xiaomi/garnet',
     'hardware/qcom-caf/sm8450',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
@@ -25,6 +27,28 @@ namespace_imports = [
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
 ]
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'libagm',
+        'libagmclient',
+        'libagmmixer',
+        'libar-acdb',
+        'libar-gpr',
+        'libar-gsl',
+        'libar-pal',
+        'libats',
+        'liblx-ar_util',
+        'liblx-osal',
+        'libpalclient',
+        'libsndcardparser',
+        'vendor.qti.hardware.AGMIPC@1.0',
+        'vendor.qti.hardware.AGMIPC@1.0-impl',
+        'vendor.qti.hardware.pal@1.0',
+        'vendor.qti.hardware.pal@1.0-impl',
+    ): lib_fixup_remove,
+}
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
