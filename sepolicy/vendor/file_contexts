@@ -68,7 +68,7 @@
 /dev/xiaomi-touch u:object_r:touchfeature_device:s0
 
 # Vibrator
-/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi u:object_r:hal_vibrator_default_exec:s0
+/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.garnet u:object_r:hal_vibrator_default_exec:s0
 
 # Wifi
 /data/vendor/mac_addr(/.*)? u:object_r:vendor_mac_vendor_data_file:s0
